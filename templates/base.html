@@ -25,6 +25,15 @@
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
+
+    {% block page_header %} 
+    {% endblock %}
+
+    {% block content %} 
+    {% endblock %}
+
+    {% block postloadjs %} 
+    {% endblock %}
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     {% block corejs %}
