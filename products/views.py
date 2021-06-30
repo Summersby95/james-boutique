@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404, render, redirect, reverse
 from .models import Product, Category
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 
 # Create your views here.
 def all_products(request):
