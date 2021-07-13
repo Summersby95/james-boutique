@@ -5,7 +5,7 @@ from django.dispatch import receiver
 from django.db.models.signals import post_save
 
 class UserProfile(models.Model):
-    default_user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_phone_number = models.CharField(max_length=20, null=True, blank=False)
     default_country = CountryField(blank_label='Country *', null=True, blank=False)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
