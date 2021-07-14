@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9!-k3(as*juaask-kv2*qhhs$a!w(^4@xe%+ryt!u9j!1ttl*9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ms4-boutique-ado', 'localhost']
+ALLOWED_HOSTS = ['ms4-boutique-ado.herokuapp.com', 'localhost']
 
 
 # Application definition
